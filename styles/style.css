@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "Bpg";
-  src: url("fonts/bpg_ingiri_arial.ttf")
-}
-@font-face {
-  font-family: "Bpg-Nino";
-  src: url("fonts/bpg_nino_mtavruli_normal.ttf")
-}
 *{
     font-family: 'Roboto';
     font-weight: bold;
@@ -13,8 +5,22 @@
 body{
     margin: 30px;   
 }
+
+header{
+    display: block;
+}
+header nav{
+    display: inline-block;
+    margin: 10px 0 0 50px;
+    vertical-align: middle;
+}
+.main-menu li{
+    display: inline-block;
+}
+
 .logo{
     margin-bottom: 20px;
+    vertical-align: middle;
 }
 
 .main-menu{
@@ -23,6 +29,7 @@ body{
 }
 .main-menu li{
     margin-bottom: 10px;
+    margin-right: 25px;
 }
 .main-menu a{
     text-decoration: none;
@@ -56,6 +63,10 @@ section{
 article{
     margin: 20px 0;
 }
+article .date p{
+    display: inline-block;
+    vertical-align: middle;
+}
 article .number{
     background-color:#3D58A6;
     padding: 10px;
@@ -65,7 +76,7 @@ article .number{
     color: #FFFFFF;
 }
 article .month{
-    margin-top: 10px;
+    margin-left: 20px;
     font-family: Bpg-Nino;
     font-size: 22px;
     color: #3D58A6;
@@ -77,7 +88,15 @@ article .title{
     color: #000000;
 }
 article img{
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-right: 40px;
+    vertical-align: top;
+}
+article .texts{
+    display: inline-block;
+    margin-top: 15px;
+    vertical-align: top;
+    width: 900px;
 }
 article .text{
     margin-top: 10px;
