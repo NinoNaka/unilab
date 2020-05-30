@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Bpg";
+  src: url("fonts/bpg_ingiri_arial.ttf")
+}
+@font-face {
+  font-family: "Bpg-Nino";
+  src: url("fonts/bpg_nino_mtavruli_normal.ttf")
+}
+*{
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+body{
+    margin: 30px;   
+}
+.logo{
+    margin-bottom: 20px;
+}
+
+.main-menu{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.main-menu li{
+    margin-bottom: 10px;
+}
+.main-menu a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: #3D58A6;
+    font-family: Bpg;
+}
+#active{
+    color: #EE4036;
+}
+.footer-menu{
+    margin-top: 20px;
+}
+.footer-menu li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.footer-menu #first{
+    border-right: 1px solid #363E97;
+    margin-right: 15px;
+    padding-right: 15px;
+}
+#contact{
+    display: block;
+    margin: 200px auto;
+}
+section{
+    margin: 20px 0;
+}
+article{
+    margin: 20px 0;
+}
+article .number{
+    background-color:#3D58A6;
+    padding: 10px;
+    display: inline-block;
+    font-family: Bpg-Nino;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+article .month{
+    margin-top: 10px;
+    font-family: Bpg-Nino;
+    font-size: 22px;
+    color: #3D58A6;
+}
+article .title{
+    margin-top: 10px;
+    font-family: Bpg-Nino;
+    font-size: 20px;
+    color: #000000;
+}
+article img{
+    margin-top: 10px;
+}
+article .text{
+    margin-top: 10px;
+    font-family: Bpg;
+    font-size: 16px;
+    color: #000000;
+}
