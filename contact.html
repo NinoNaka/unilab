@@ -18,8 +18,15 @@
                 </ul>
             </nav>
         </header>
-        <section>
-            <img id="contact" src="image/contact.png">
+        <section class="contact">
+            <div class="contact-text">
+                <h3>საკონტაქტო ინფორმაცია:</h3>
+                <p><span class="pre">მისამართი:</span>პეტრიაშვილის ქ. 30</p>
+                <p><span class="pre">ტელ.:</span>+995 32 222 222</p>
+                <p><span class="pre">ელ. ფოსტა:</span>mail@gmail.com</p>
+            </div>
+            <div class="map" id="map">
+            </div>
         </section>
         <footer>
             <ul class="footer-menu">
@@ -27,5 +34,22 @@
                 <li><a target="_blank" href="https://www.youtube.com/"><img src="image/yt.svg"></a></li>
             </ul>
         </footer>
+        
+        
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                var Tbilisi = {lat: 41.722042, lng: 44.810404};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 14, center: Tbilisi});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: Tbilisi, map: map});
+            }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBG3rPhKbIQ2yK0iJzOTQ6j8JJCIdR44M&callback=initMap">
+        </script>
     </body>
 </html>
